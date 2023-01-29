@@ -64,3 +64,9 @@ a{
 #signout{
     background-image: linear-gradient(45deg, rgb(250, 103, 186), rgb(246, 255, 0));
 }
+#login:hover{
+    background-image: linear-gradient(45deg, rgb(169, 253, 74), rgb(4, 196, 196));
+}
+#signout:hover{
+    background-image: linear-gradient(45deg, rgb(249, 60, 167), rgb(200, 207, 4));
+}
