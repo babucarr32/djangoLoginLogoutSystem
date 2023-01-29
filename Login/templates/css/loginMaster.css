@@ -1,0 +1,26 @@
+body{
+    /* background-image: url("images/python-logo-4k-i6-1440x900.jpg"); */
+    /* background-repeat: no-repeat; */
+    height: 55vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(16, 16, 16);
+}
+.intro{
+    /* background-color: yellow; */
+    height: 50vw;
+}
+img{
+    width: 150%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-35%, 40%);
+    z-index: -1;
+    /* position: fixed; */
+}
+h1{
+    color: white;
+}
