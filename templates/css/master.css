@@ -18,8 +18,29 @@ body{
     left: 0;
     transform: translate(0%, 50%);
 }
+@media screen and (max-width: 600px) {
+    .intro{
+        color: rgb(223, 0, 0);
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        width: 40%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+        margin-left: 0;
+        padding-top: 20px;
+    }
+    ul li{
+        text-align: center;
+        display: flex;
+       
+        justify-content: center;
+    }
+  }
 h1{
     color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:4vw;
 }
 ul{
     margin: 0;
@@ -29,10 +50,10 @@ li{
     margin-top: 1vw;
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 a{
-    padding: 1vw 8vw;
+    padding: 1vw 6vw;
     text-decoration: none;
     color: black;
     border-radius: 3vw;
