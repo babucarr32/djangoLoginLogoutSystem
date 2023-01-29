@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def signout(request):
-    return render(request, 'signout.html')
+    return render(request, 'signup.html')
