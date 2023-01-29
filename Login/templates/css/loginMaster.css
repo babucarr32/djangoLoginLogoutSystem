@@ -12,15 +12,47 @@ body{
     /* background-color: yellow; */
     height: 50vw;
 }
+.loginFormDiv{
+    width: 300px;
+    height: auto;
+    background-color: rgba(54, 54, 54, 0.626);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 2vw;
+}
+
+input{
+    margin: 1vw;
+    width: 250px;
+    height: 40px;
+}
+#loginLink{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+button{
+    margin-top: 5vw;
+    width: 250px;
+    height: 40px;
+    border-radius: 0;
+}
 img{
     width: 150%;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     transform: translate(-35%, 40%);
     z-index: -1;
-    /* position: fixed; */
+    position: fixed;
 }
 h1{
     color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
 }
