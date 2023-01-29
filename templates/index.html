@@ -10,8 +10,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World I am homepage</h1>
-    <a href="{% url 'LOGIN' %}">Login</a>
-    <a href="{% url 'SIGNOUT' %}">Signin</a>
+    <div class="intro">
+        <div>
+            <h1>Python Django</h1>
+        </div>
+        <ul>
+            <li>
+                <a id="login" href="{% url 'LOGIN' %}">Login</a>
+            </li>
+            <li>
+                <a id="signout" href="{% url 'SIGNOUT' %}">Signin</a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
