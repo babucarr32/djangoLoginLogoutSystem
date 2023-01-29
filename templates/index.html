@@ -17,14 +17,26 @@
         <div>
             <h1>Python Django</h1>
         </div>
+        {% if user.is_authenticated %}
         <ul>
             <li>
-                <a id="login" href="{% url 'LOGIN' %}">Login</a>
+                <a id="signout" href="javascript:{document.getElementById('logout').submit()}" onclick="">Logout</a>
             </li>
-            <li>
-                <a id="signout" href="{% url 'SIGNUP' %}">SignUp</a>
-            </li>
+            <form id="logout" action="{% url 'LOGOUT' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden">
+            </form>
         </ul>
+        {% else %}
+            <ul>
+                <li>
+                    <a id="login" href="{% url 'LOGIN' %}">Login</a>
+                </li>
+                <li>
+                    <a id="signup" href="{% url 'SIGNUP' %}">SignUp</a>
+                </li>
+            </ul>
+        {% endif %}
     </div>
 </body>
 </html>

@@ -10,7 +10,11 @@ def login(request):
             auth.login(request, userLogin)
             return redirect('/')
         else:
-            return render(request, 'signup.html')
+            return redirect('SIGNUP')
     else:
         return render(request, 'login.html')
-            
+
+def logout(request):
+    if request.method == 'POST':
+        auth.logout(request)
+        return redirect('/')

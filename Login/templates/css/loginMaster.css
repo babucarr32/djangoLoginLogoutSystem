@@ -1,6 +1,4 @@
 body{
-    /* background-image: url("images/python-logo-4k-i6-1440x900.jpg"); */
-    /* background-repeat: no-repeat; */
     height: 55vw;
     background-position: center;
     background-size: cover;
@@ -9,7 +7,6 @@ body{
     background-color: rgb(16, 16, 16);
 }
 .intro{
-    /* background-color: yellow; */
     height: 50vw;
 }
 .loginFormDiv{
@@ -46,7 +43,6 @@ button{
 }
 img{
     width: 150%;
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     transform: translate(-35%, 40%);
