@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "requirements.txt",
+        "use": "@vercel/pip",
+        "config": {
+          "pythonVersion": "3.9"
+        }
+      },
+      {
+        "src": ".",
+        "use": "@vercel/python",
+        "config": {
+          "run": "gunicorn your_django_project.wsgi:application --workers 4 --bind 0.0.0.0:$PORT"
+        }
+      }
+    ]
+  }
+  
